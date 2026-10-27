@@ -107,13 +107,3 @@ If PHP and MySQL are installed in your command line:
 
 > **Note on Self-Healing Auto-Installer:**
 > The `config/db.php` script is equipped with automatic database & table migration! If you connect to a running MySQL server with default credentials (`root` and blank password), it automatically creates the `student_registration` database, tables, and seeds the default admin user on first launch.
-
----
-
-## ✨ Key Features
-- **Modern Responsive Design:** Clean dashboard layout with CSS Grid, Flexbox, custom color palettes, and mobile compatibility.
-- **Dedicated Print Styles (`@media print`):** Formats student registration cards for print and PDF export with a single click.
-- **Instant Client & Server Validation:** Dual-layer validation checks name length, email syntax, phone format, age calculation, and file upload limits.
-- **Live Search & Filter:** Instant real-time filtering on the admin dashboard by student name, email, phone, or course.
-- **CSV Data Export:** One-click download of all enrolled students formatted for Excel or database import.
-- **Security Protections:** Prepared statements with PDO (SQL injection prevention), CSRF verification tokens, XSS protection (`htmlspecialchars`), and strict `.htaccess` restrictions on the `uploads/` directory.
